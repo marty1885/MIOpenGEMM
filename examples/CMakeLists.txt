@@ -2,7 +2,7 @@
 # Copyright (C) 2017 Advanced Micro Devices, Inc. All rights reserved.
 ################################################################################
 
-SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -std=c++11 -Wall -Wextra -pedantic" )
+SET(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -std=c++11 -Wall -Wextra -pedantic -pthread" )
 
 add_custom_target(examples COMMENT "Build all examples.")
 

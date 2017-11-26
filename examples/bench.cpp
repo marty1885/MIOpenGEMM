@@ -19,7 +19,7 @@ int main()
   //"MIC5_PAD2_PLU0_LIW0_MIW1_WOS0_VEW1",
   //"UNR16_GAL3_PUN0_ICE1_IWI1_SZT0_MAD0_NAW16_UFO0_MAC256_SKW10_AFI1_MIA0"});
 
-  CLHint         devhint;
+  CLHint         devhint({"780", "GTX", "Ti", "CUDA"});
   Offsets        offsets = get_zero_offsets();
   owrite::Writer mowri(Ver::E::TERMWITHDEPS, "");
   dev::TinyTwo   boa(gg, offsets, mowri, devhint);
