@@ -1,3 +1,11 @@
+This repo contains a hacked version of MIOpenGEMM that runs on NVIDIA GPU and theoretically any OpenCL device.
+
+Note that MIOpenGEMM's demos require a hint for MIOpenGEMM to select shich OpenCL device to use. Currently it is setted to find a NVIDIA GPU in `bench.cpp` and find a AMD GPU in other files. Please change them if needed. They look like this.
+
+```C++
+CLHint         devhint({"780", "GTX", "Ti", "CUDA"})
+```
+
 # MIOpenGEMM
 
 An OpenCL general matrix multiplication (GEMM) API and kernel generator. More information is available on the [wiki](https://github.com/ROCmSoftwarePlatform/MIOpenGEMM/wiki). 
